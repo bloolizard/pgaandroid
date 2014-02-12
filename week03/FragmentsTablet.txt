@@ -1,0 +1,7 @@
+02-10 12:08:53.077: I/Lab-Fragments(910): Entered onActivityCreated()
+02-10 12:08:57.027: I/Lab-Fragments(910): Entered onItemSelected(0)
+02-10 12:08:57.027: I/Lab-Fragments(910): Entered updateFeedDisplay()
+02-10 12:08:59.466: I/Lab-Fragments(910): Entered onItemSelected(1)
+02-10 12:08:59.466: I/Lab-Fragments(910): Entered updateFeedDisplay()
+02-10 12:09:01.778: I/Lab-Fragments(910): Entered onItemSelected(2)
+02-10 12:09:01.796: I/Lab-Fragments(910): Entered updateFeedDisplay()
