@@ -32,6 +32,7 @@ public class ToDoManagerActivity extends ListActivity {
 
 	private static final String FILE_NAME = "TodoManagerActivityData.txt";
 	private static final String TAG = "Lab-UserInterface";
+	private static final String TAG2 = "Edwin";
 
 	// IDs for menu items
 	private static final int MENU_DELETE = Menu.FIRST;
@@ -51,12 +52,12 @@ public class ToDoManagerActivity extends ListActivity {
 
 		//TODO - Inflate footerView for footer_view.xml file
 		LayoutInflater inflater = getLayoutInflater();
-		
-		
-		TextView footerView = null;
+		TextView footerView = (TextView)inflater.inflate(R.layout.footer_view, null);
 
 		//TODO - Add footerView to ListView
-
+		getListView().addFooterView(footerView);
+		
+		
 		footerView.setOnClickListener(new OnClickListener() {
 			@Override
 			public void onClick(View v) {
@@ -64,12 +65,13 @@ public class ToDoManagerActivity extends ListActivity {
 				log("Entered footerView.OnClickListener.onClick()");
 
 				//TODO - Attach Listener to FooterView. Implement onClick().
-
+				Intent intentAddToDoActivity = new Intent(ToDoManagerActivity.this, AddToDoActivity.class);
+				startActivityForResult(intentAddToDoActivity, ADD_TODO_ITEM_REQUEST);
 			}
 		});
 
 		//TODO - Attach the adapter to this ListActivity's ListView
-
+		getListView().setAdapter(mAdapter);
 	}
 
 	@Override
@@ -81,7 +83,11 @@ public class ToDoManagerActivity extends ListActivity {
 		// If user submitted a new ToDoItem
 		// Create a new ToDoItem from the data Intent
 		// and then add it to the adapter
-
+		if(requestCode == ADD_TODO_ITEM_REQUEST) {
+			if (resultCode == RESULT_OK){
+				Log.i(TAG2, "The request was ok");
+			}
+		}
 	}
 
 	// Do not modify below here

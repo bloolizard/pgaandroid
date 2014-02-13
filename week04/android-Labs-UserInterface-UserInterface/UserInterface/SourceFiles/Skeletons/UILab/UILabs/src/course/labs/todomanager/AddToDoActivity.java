@@ -29,6 +29,7 @@ public class AddToDoActivity extends Activity {
 	private static final int SEVEN_DAYS = 604800000;
 
 	private static final String TAG = "Lab-UserInterface";
+	private static final String TAG2 = "Edwin";
 
 	private static String timeString;
 	private static String dateString;
@@ -93,7 +94,7 @@ public class AddToDoActivity extends Activity {
 				log("Entered cancelButton.OnClickListener.onClick()");
 
 				//TODO - Implement onClick().  
-
+				finish();
 			}
 		});
 
@@ -104,7 +105,7 @@ public class AddToDoActivity extends Activity {
 			@Override
 			public void onClick(View v) {
 				log("Entered resetButton.OnClickListener.onClick()");
-
+				Log.i(TAG2, "Reset Button pressed");
 				//TODO - Reset data fields to default values
 				
 
