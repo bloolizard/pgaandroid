@@ -6,6 +6,6 @@ This repo consists of all the assignments from the COURSERA: Programming Mobile 
 
 ## Contents
 
-Week 4 - User Interface Class
-Week 5 - Notifications
-Week 6 - Graphics
+Week 4 - User Interface Class<br/>
+Week 5 - Notifications<br/>
+Week 6 - Graphics<br/>
